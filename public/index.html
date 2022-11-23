@@ -24,7 +24,17 @@
         });
 
         socket.on('mensaje', function(data){
-            console.log('Escuchando: ', data);
+            // console.log('Escuchando: ', data);
+        });
+        
+        socket.on('nuevo-mensaje', function(data){
+            // console.log('Escuchando: ', data);
+        });
+
+
+        socket.on('active-bands', function(data){
+            console.clear();
+            console.table(data);
         });
     </script>
 </body>
